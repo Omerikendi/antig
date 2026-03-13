@@ -1,0 +1,5 @@
+agent manager ile aynı zamanda birden fazla yapay zeka çalışanını yönetebiliyorsun.
+normalde chat kısmında tek bir modelle konuşabilirken agent manager kısmında farklı modellere task atayabiliyorsun.
+sen de inboxtan ilerlemeyi ve sonuçları takip ediyorsun. bu tek seferlik iş için değil uzun sürelik işler ve iş bölümü.
+agent manager takip edilebilir hale getiriyor. tek agent her şeye aynı anda bakmıyor her agentin farklı görevi var.
+researcher, builder, reviewer ve ai en sonunda saçmalamıyor.
