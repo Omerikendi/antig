@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TFT 16.6 Strateji Merkezi</title>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <a href="#comps" class="skip-link">İçeriğe Atla</a>
+    <canvas id="particle-canvas" aria-hidden="true"></canvas>
+    <div class="background-overlay" aria-hidden="true"></div>
+    
+    <header class="glass-nav">
+        <div class="logo">TFT<span>METRIC</span></div>
+        <button class="menu-toggle" aria-label="Menüyü aç" aria-expanded="false">
+            <span></span><span></span><span></span>
+        </button>
+        <nav aria-label="Ana navigasyon">
+            <a href="#hero">Ana Sayfa</a>
+            <a href="#comps">Kompozisyonlar</a>
+            <a href="#about">Araştırmacı Notları</a>
+        </nav>
+    </header>
+
+    <main id="main-content">
+        <section id="hero" class="hero-section">
+            <div class="hero-content">
+                <div class="patch-badge">Yama 16.6 Aktif</div>
+                <h1 class="glitch" data-text="Meta Analizi">Meta Analizi</h1>
+                <p>Araştırmacının Planına Göre En Güçlü TFT Kompozisyonları</p>
+                <a href="#comps" class="cta-button">Stratejileri Keşfet <span class="arrow">→</span></a>
+            </div>
+        </section>
+
+        <section id="comps" class="comps-section">
+            <h2 class="section-title">Tier Listesi & Oynanma Durumları</h2>
+            <div class="cards-grid">
+                
+                <!-- Card 1 -->
+                <div class="comp-card" data-tier="S">
+                    <div class="card-glow"></div>
+                    <div class="card-image bg-mystic"></div>
+                    <div class="card-content">
+                        <div class="tier-badge s-tier">S Tier</div>
+                        <h3>Büyücü Ejderhalar</h3>
+                        <p class="comp-desc">Aşırı yüksek anlık hasar odaklı büyücü kombinasyonu.</p>
+                        
+                        <div class="play-condition">
+                            <h4><span class="icon">⚠️</span> Hangi Durumda Oynanmalı?</h4>
+                            <p>Oyun başı çoğunlukla <strong>Gözyaşı (Tear)</strong> ve <strong>Sopa (Rod)</strong> düştüyse. Erken aşamada büyücü eklentisi (augment) geldiğinde kesin yönelinmelidir.</p>
+                        </div>
+                        
+                        <div class="champions">
+                            <span class="champ-tag">Ahri</span>
+                            <span class="champ-tag">Syndra</span>
+                            <span class="champ-tag">Aurelion Sol</span>
+                            <span class="champ-tag">Illaoi</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="comp-card" data-tier="S">
+                    <div class="card-glow"></div>
+                    <div class="card-image bg-blade"></div>
+                    <div class="card-content">
+                        <div class="tier-badge s-tier">S Tier</div>
+                        <h3>Kılıç Ustası Reroll</h3>
+                        <p class="comp-desc">Düşük maliyetli kılıç ustalarını 3 yıldıza çıkarma odaklı agresif plan.</p>
+                        
+                        <div class="play-condition">
+                            <h4><span class="icon">⚠️</span> Hangi Durumda Oynanmalı?</h4>
+                            <p>İlk aşamalarda çok fazla kopya geldiğinde ve <strong>B.F. Kılıcı</strong> ağırlıklı item havuzu varsa. Ekonomiyi iyi koruyabildiğiniz maçlarda uygundur.</p>
+                        </div>
+                        
+                        <div class="champions">
+                            <span class="champ-tag">Yasuo</span>
+                            <span class="champ-tag">Yone</span>
+                            <span class="champ-tag">Irelia</span>
+                            <span class="champ-tag">Shen</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="comp-card" data-tier="A">
+                    <div class="card-glow"></div>
+                    <div class="card-image bg-guardian"></div>
+                    <div class="card-content">
+                        <div class="tier-badge a-tier">A Tier</div>
+                        <h3>Gece Bekçileri (Tank/Flex)</h3>
+                        <p class="comp-desc">Ön hattı yıkılmaz hale getiren, arka hatta taşıyıcı serbestliği sunan kompozisyon.</p>
+                        
+                        <div class="play-condition">
+                            <h4><span class="icon">⚠️</span> Hangi Durumda Oynanmalı?</h4>
+                            <p>Oyun başkalarının ne oynadığına göre şekilleniyorsa ve elinizde bolca <strong>Zırh</strong> veya <strong>Can</strong> itemleri varsa. Geç oyuna esnek geçiş sağlar.</p>
+                        </div>
+                        
+                        <div class="champions">
+                            <span class="champ-tag">Thresh</span>
+                            <span class="champ-tag">Nautilus</span>
+                            <span class="champ-tag">Aphelios</span>
+                            <span class="champ-tag">Amumu</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        
+        <section id="about" class="info-section">
+            <div class="glass-panel">
+                <h2>Araştırmacı Notları</h2>
+                <div class="notes-grid">
+                    <div class="note-item">
+                        <div class="note-icon">📊</div>
+                        <h3>Ekonomi Yönetimi</h3>
+                        <p>16.6 yamasında altın (gold) kartelleri önem kazandı. Erken seviye basmak yerine faizi 50 altında tutmak şu an en çok kazandıran strateji.</p>
+                    </div>
+                    <div class="note-item">
+                        <div class="note-icon">✨</div>
+                        <h3>Eklentiler (Augments)</h3>
+                        <p>Savaş odaklı eklentiler (Combat Augments), ekonomi eklentilerine kıyasla daha fazla ilk 4 şansı sağlıyor.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+        <p>TFT Researcher Agent tarafından hazırlandı &copy; 2026 | Ustalıkla Tasarlanmıştır.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
